@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f89f16f305eaa24ea8a7023b1183cd9, type: 3}
+  m_Name: Missile Boat
+  m_EditorClassIdentifier: 
+  unitName: Missile Boat
+  description: Fires missiles
+  alloyCost: 200
+  creditCost: 100
+  speed: 1
+  turnSpeed: 90
+  maxHealth: 20
+  attacks:
+  - attackName: Missile
+    projectile: {fileID: 6105781140515484734, guid: 416c82f723932204b923a6af09de5632, type: 3}
+    attackRange: 12
+    attackSpeed: 2
+    attackDamage: 15
+    moveSpeed: 4
+    useBarrel: 0
+    targeting: 1
+  - attackName: PDC
+    projectile: {fileID: 6105781140515484734, guid: f8d41a05d7273574ba572eb1826c515f, type: 3}
+    attackRange: 5
+    attackSpeed: 1.5
+    attackDamage: 1
+    moveSpeed: 8
+    useBarrel: 1
+    targeting: 0
+  - attackName: PDC
+    projectile: {fileID: 6105781140515484734, guid: f8d41a05d7273574ba572eb1826c515f, type: 3}
+    attackRange: 5
+    attackSpeed: 1.5
+    attackDamage: 1
+    moveSpeed: 8
+    useBarrel: 1
+    targeting: 0
+  prefab: {fileID: 2792233461418594431, guid: 9a943f0f401584d4eb1c051f06a810c9, type: 3}
+  isTempUnit: 0
+  spawnedUnits: []

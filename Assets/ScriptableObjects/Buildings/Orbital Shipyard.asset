@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b28ce47ae187943809449157ce877d, type: 3}
+  m_Name: Orbital Shipyard
+  m_EditorClassIdentifier: 
+  level: 0
+  buildTime: 0
+  buildingUpgrades:
+  - alloyCost: 500
+    creditCost: 500
+    buildTime: 0
+    description: 'Produces 1 Carrier every 2 turns
+
+'
+    productions:
+    - type: 1
+      resource: 0
+      unit: {fileID: 11400000, guid: f8bb545aea43f1140b8aa987782b8a40, type: 2}
+      amount: 0
+      maxAmount: 5
+      everyXRoundsCounter: 0
+      everyXRounds: 2
+  buildingName: Orbital Shipyard
+  description: 'Produces Large Ships
+
+    Lv1: Carriers
+
+'

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bullet
+  - EnemyBullet
+  - Ship
+  - EnemyShip
+  - CombatWall
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ship
+  - EnemyShip
+  - Bullet
+  - EnemyBullet
+  - CameraCollideLayer
+  - CombatWall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Locations
+    uniqueID: 892996577
+    locked: 0
+  - name: Fleets
+    uniqueID: 453147305
+    locked: 0
+  - name: Text
+    uniqueID: 3517371557
+    locked: 0
