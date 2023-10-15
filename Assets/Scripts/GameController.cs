@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour
     public float healthBoost;
     #endregion
     
+    
 
     public List<CombatUnit> playerUnits = new List<CombatUnit>();
     public List<CombatUnit> enemyUnits = new List<CombatUnit>();
@@ -250,6 +251,10 @@ public class GameController : MonoBehaviour
     }
     public void EndTurn()
     {
+        if(turn == 50)
+        {
+            UIController.instance.gameOverScreen.SetActive(true);
+        }
         foreach(Planet planet in playerPlanets)
         {
             foreach(PlanetBuilding building in planet.buildings)
@@ -302,7 +307,14 @@ public class GameController : MonoBehaviour
                 }
             }
         }
-        
+        if (UIController.instance.isUnitsTabOpen)
+        {
+            UIController.instance.OpenUnitRecruitment();
+        }
+        else if (UIController.instance.isBuildingsTabOpen)
+        {
+            UIController.instance.OpenPlanet(0);
+        }
         turn++;
         
         StartTurn();

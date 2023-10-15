@@ -238,9 +238,13 @@ public class UIController : MonoBehaviour
     public void ClosePlanet()
     {
         planetBackground.gameObject.SetActive(false);
+        isUnitsTabOpen = false;
+        isBuildingsTabOpen = false;
     }
     public void OpenPlanet(int i)
     {
+        isUnitsTabOpen = false;
+        isBuildingsTabOpen = true;
         GameController.instance.selectedPlanet = GameController.instance.playerPlanets[i];
         ClearPlanetBuildings();
         ClearUnitProduction();
@@ -404,8 +408,12 @@ public class UIController : MonoBehaviour
             
         }
     }
+    public bool isUnitsTabOpen = false;
+    public bool isBuildingsTabOpen = false;
     public void OpenUnitRecruitment()
     {
+        isUnitsTabOpen = true;
+        isBuildingsTabOpen = false;
         ClearUnitProduction();
         ClearPlanetBuildings();
         foreach(PlanetBuilding planetBuilding in GameController.instance.selectedPlanet.buildings)
@@ -452,6 +460,7 @@ public class UIController : MonoBehaviour
             {
                 slider.minValue = 0;
             }
+            slider.value = slider.maxValue;
         }
         else
         {
@@ -459,6 +468,7 @@ public class UIController : MonoBehaviour
         }
         OpenFleetPanel(false);
         UpdateUI();
+        OpenUnitRecruitment();
     }
     private void ClearUnitProduction()
     {
